@@ -1,0 +1,384 @@
+---
+regions:
+    alpha_city:
+        type: cuboid
+        min:
+            x: -400.0
+            y: 8.0
+            z: -400.0
+        max:
+            x: 400.0
+            y: 230.0
+            z: 400.0
+        priority: 0
+        flags:
+            passthrough: allow
+            snow-melt: deny
+            fire-spread: deny
+            mob-spawning: allow
+            creeper-explosion: deny
+            deny-spawn:
+                - ENDERMAN
+                - WITCH
+                - CREEPER
+                - ZOMBIE
+                - SPIDER
+                - SKELETON
+            tnt: deny
+            chest-access: allow
+            entry: allow
+            enderman-grief: deny
+            mob-damage: deny
+            entity-painting-destroy: deny
+            grass-growth: deny
+        owners:
+            groups:
+                - mod
+        members:
+            groups:
+                - vip
+    g_alpha_model:
+        type: cuboid
+        min:
+            x: -122.0
+            y: 0.0
+            z: 451.0
+        max:
+            x: -53.0
+            y: 250.0
+            z: 520.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - mod
+        members:
+            players:
+                - vip
+        parent: alpha_city
+    g_alpha_newbie_old:
+        type: cuboid
+        min:
+            x: -112.0
+            y: 64.0
+            z: 571.0
+        max:
+            x: -53.0
+            y: 102.0
+            z: 630.0
+        priority: 0
+        flags:
+            mob-spawning: deny
+        owners:
+            players:
+                - mod
+        members: [ ]
+    p_l_shinosakacity:
+        type: cuboid
+        min:
+            x: 761.0
+            y: 0.0
+            z: 101.0
+        max:
+            x: 1390.0
+            y: 250.0
+            z: 730.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - mushroom_tim
+        members: [ ]
+    p_s_aquatic_eden:
+        type: cuboid
+        min:
+            x: 1071.0
+            y: 0.0
+            z: -621.0
+        max:
+            x: 1170.0
+            y: 250.0
+            z: -522.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - horticulture
+        members: [ ]
+    p_s_tatsujin:
+        type: cuboid
+        min:
+            x: 1071.0
+            y: 0.0
+            z: -181.0
+        max:
+            x: 1170.0
+            y: 250.0
+            z: -82.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - ureezu
+        members: [ ]
+    p_s_alphahome:
+        type: cuboid
+        min:
+            x: 1621.0
+            y: 0.0
+            z: -181.0
+        max:
+            x: 1720.0
+            y: 250.0
+            z: -82.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - homura112358
+        members: [ ]
+    p_s_imphper:
+        type: cuboid
+        min:
+            x: 191.0
+            y: 0.0
+            z: -511.0
+        max:
+            x: 290.0
+            y: 250.0
+            z: -412.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - fntsrswl
+        members: [ ]
+    p_s_lowb:
+        type: cuboid
+        min:
+            x: 410.0
+            y: 0.0
+            z: -401.0
+        max:
+            x: 510.0
+            y: 250.0
+            z: -302.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - iop415263g
+        members: [ ]
+    p_s_p's_island:
+        type: cuboid
+        min:
+            x: 411.0
+            y: 0.0
+            z: -511.0
+        max:
+            x: 509.0
+            y: 250.0
+            z: -412.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - paul
+        members: [ ]
+    p_s_regiondemo:
+        type: cuboid
+        min:
+            x: 411.0
+            y: 0.0
+            z: -181.0
+        max:
+            x: 510.0
+            y: 250.0
+            z: -82.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - sntc06
+                - mod
+        members: [ ]
+    p_s_financialcentre:
+        type: cuboid
+        min:
+            x: 521.0
+            y: 0.0
+            z: -181.0
+        max:
+            x: 620.0
+            y: 250.0
+            z: -81.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - alfar01
+        members: [ ]
+    p_s_zo4fm,4:
+        type: cuboid
+        min:
+            x: 521.0
+            y: 0.0
+            z: -511.0
+        max:
+            x: 620.0
+            y: 250.0
+            z: -412.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - zkv94
+        members: [ ]
+    p_s_rgarden:
+        type: cuboid
+        min:
+            x: 631.0
+            y: 0.0
+            z: -291.0
+        max:
+            x: 730.0
+            y: 250.0
+            z: -192.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - raider
+        members: [ ]
+    p_s_quartzpalace:
+        type: cuboid
+        min:
+            x: 631.0
+            y: 0.0
+            z: -401.0
+        max:
+            x: 730.0
+            y: 250.0
+            z: -302.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - herobrine
+        members: [ ]
+    p_s_afa:
+        type: cuboid
+        min:
+            x: 631.0
+            y: 0.0
+            z: -621.0
+        max:
+            x: 730.0
+            y: 250.0
+            z: -522.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - boy69162000
+        members: [ ]
+    p_s_oldmoh:
+        type: cuboid
+        min:
+            x: 741.0
+            y: 0.0
+            z: -291.0
+        max:
+            x: 840.0
+            y: 250.0
+            z: -192.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - oldmoh
+        members: [ ]
+    p_s_agito:
+        type: cuboid
+        min:
+            x: 741.0
+            y: 0.0
+            z: -401.0
+        max:
+            x: 840.0
+            y: 250.0
+            z: -302.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - lpsexy000
+        members: [ ]
+    p_s_orange:
+        type: cuboid
+        min:
+            x: 81.0
+            y: 0.0
+            z: -511.0
+        max:
+            x: 180.0
+            y: 250.0
+            z: -412.0
+        priority: 0
+        flags:
+            passthrough: allow
+            mob-spawning: deny
+        owners:
+            players:
+                - david50407
+        members: [ ]
+    p_s_newville:
+        type: cuboid
+        min:
+            x: 851.0
+            y: 0.0
+            z: -401.0
+        max:
+            x: 950.0
+            y: 250.0
+            z: -302.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - henry1758
+        members: [ ]
+    p_s_fanji_village:
+        type: cuboid
+        min:
+            x: 961.0
+            y: 0.0
+            z: -401.0
+        max:
+            x: 1060.0
+            y: 250.0
+            z: -302.0
+        priority: 0
+        flags: [ ]
+        owners:
+            players:
+                - iris12328
+        members: [ ]
+    r_small_player_area:
+        type: cuboid
+        min:
+            x: -182.0
+            y: 64.0
+            z: 451.0
+        max:
+            x: -173.0
+            y: 68.0
+            z: 460.0
+        priority: 0
+        flags:
+            mob-damage: deny
+            mob-spawning: allow
+        owners:
+            players:
+                - mod
+        members: [ ]
