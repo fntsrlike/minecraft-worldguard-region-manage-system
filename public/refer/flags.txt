@@ -1,0 +1,334 @@
+passthrough
+Use allow to have this region treated as a region that doesn\'t check build permission (use this to make simple no-PVP, etc. zones).
+N/A
+All
+State'
+
+build
+All members and owners will be able to build normally without changing this flag, do not change it. This flag overrides all region build checks. Deny always takes precedence over allow. If you simply want to protect a region, you don\'t have to touch this flag. By default no one can build in a region until you use addowner/addmember to add a player to the region.
+N/A
+Non-Members
+State'
+
+construct
+Deprecated. Don\'t use this flag at all. It\'s broken and should be considered deprecated.
+Members
+N/A
+Group'
+
+pvp
+Allow or block PvP.
+Allowed
+All
+State'
+
+mob-damage
+Allow or block mob damage on players.
+Allowed
+All
+State'
+
+entity-item-frame-destroy
+Allow or block non-player entities from destroying item-frames.
+Allowed
+N/A
+State'
+
+entity-painting-destroy
+Allow or block non-player entities from destroying paintings.
+Allowed
+N/A
+State'
+
+mob-spawning
+Allow or deny mobs spawning
+Allowed
+N/A
+State'
+
+creeper-explosion
+Allow or block creeper damage to terrain and players.
+Allowed
+N/A
+State'
+
+enderman-grief
+Allow or prevent endermen from picking up or placing blocks.
+Allowed
+N/A
+State'
+
+enderpearl
+Allow or prevent players from teleporting to or from regions using enderpearls.
+Allowed
+Non-Members*
+State'
+
+enderdragon-block-damage
+Allow or prevent enderdragon damage to blocks.
+Allowed
+N/A
+State'
+
+ghast-fireball
+Allow or block fireballs damage to terrain and players.
+Allowed
+N/A
+State'
+
+sleep
+Allow or block players from entering beds.
+Allowed
+Non-Members*
+State'
+
+tnt
+Allow or block TNT.
+Allowed
+N/A
+State'
+
+lighter
+Allow or block flint and steel.
+Allowed
+Non-Members*
+State'
+
+fire-spread
+Allow or block the spread of fire (requires high frequency flags to be on in configuration)
+Allowed
+N/A
+State'
+
+lava-fire
+Allow or block whether lava can start fires (requires high frequency flags to be on in configuration)
+Allowed
+N/A
+State'
+
+lightning
+Allow or block lightning striking at all in a region
+Allowed
+N/A
+State'
+
+chest-access
+Allow or block the player from opening chests, furnaces, and other containers in a region
+Deny
+Non-Members
+State'
+
+pistons
+Allow or block piston activation
+Allowed
+N/A
+State'
+
+water-flow
+Allow or block flow of water. (requires high frequency flags to be on in configuration)
+Allowed
+State
+
+lava-flow
+Allow or block flow of lava. (requires high frequency flags to be on in configuration)
+Allowed
+N/A
+State'
+
+use
+Allow or block the ability to use doors, buttons, pressure plates, levers, etc
+Allowed
+Non-Members*
+State'
+
+vehicle-place
+Allow or block the ability to place vehicles
+Denied
+Non-Members
+State'
+
+vehicle-destroy
+Allow or block the ability to remove vehicles
+Denied
+Non-Members
+State'
+
+snow-fall
+Allow or block snow from forming in an area. Note that this will not block weather altogether, that can be done in the config.
+Allowed
+N/A
+State'
+
+snow-melt
+Allow or block snow from melting in an area.
+Allowed
+N/A
+State'
+
+ice-form
+Allow or block ice from forming in an area.
+Allowed
+N/A
+State'
+
+ice-melt
+Allow or block ice from melting in an area.
+Allowed
+N/A
+State'
+
+leaf-decay
+Allow or block leaves from decaying.
+Allowed
+N/A
+State'
+
+grass-growth
+Allow or block grass from spreading to dirt.
+Allowed
+N/A
+State'
+
+invincible
+Sets a temporary godmode on the player. This will also disable /god-mode if set to deny, unless the player has the worldguard.god.override-regions permission.
+None
+All
+State'
+
+entry
+Allow or deny a group of players to enter an area
+Allowed
+Non-Members*
+State'
+
+exit
+Allow or deny a group of players to leave an area
+Allowed
+Non-Members*
+State'
+
+greeting
+Message to show a player when they enter a region. See String flag below for formatting.
+unset
+All
+String'
+
+farewell
+Message to show a player when they leave a region. See String flag below for formatting.
+unset
+All
+String'
+
+notify-enter
+Sends a message to players with the worldguard.notify permission when a player enters a region.
+False
+All
+Boolean'
+
+notify-leave
+Sends a message to players with the worldguard.notify permission when a player leaves a region.
+False
+All
+Boolean'
+
+deny-spawn
+Set mobs that can\'t spawn within the region. From console or ingame: /region flag [id] denyspawn Skeleton,Zombie,Creeper,etc . In config file: deny-spawn: [SKELETON, CREEPER, ZOMBIE, ETC]
+unset
+N/A
+List'
+
+heal-delay
+Set the time in seconds between heal-amount triggering
+unset
+N/A
+Integer'
+
+heal-amount
+Set the amount per heal time (see heal-delay)
+unset
+N/A
+Integer'
+
+heal-min-health
+Minimum health the heal flags will drop a player to.
+unset
+N/A
+Integer'
+
+heal-max-health
+Maximum health the heal flags will raise a player to. (a full bar is 20 hearts)
+unset
+N/A
+Integer'
+
+feed-delay
+Set the time in seconds between feed-amount triggering
+unset
+N/A
+Integer'
+
+feed-amount
+Set the amount per hunger regen time (see feed-delay)
+unset
+N/A
+Integer'
+
+feed-min-hunger
+Minimum hunger the feed flags will drop a player to.
+unset
+N/A
+Integer'
+
+feed-max-hunger
+Maximum hunger the feed flags will raise a player to. (a full bar is 20 food)
+unset
+N/A
+Integer'
+
+teleport
+Defines the location /region teleport <id> teleports you to.
+unset
+N/A
+Location'
+
+spawn
+Define the spawn of the region, use /region flag region x y z
+unset
+N/A
+Location'
+
+blocked-cmds
+Sets the commands that will be blocked inside the region
+unset
+N/A
+List'
+
+allowed-cmds
+Sets the commands allowed in the region. If this is set (not empty) it will act like a whitelist and ONLY commands from this list will be allowed.
+unset
+N/A
+List'
+
+send-chat
+Sets whether or not a player can send chat inside the region
+Allowed
+Non-Members*
+State'
+
+receive-chat
+Sets whether or not a player can receive chat inside the region.
+Allowed
+Non-Members*
+State'
+
+game-mode
+Sets the gamemode when a player enters a region. Can either be SURVIVAL, CREATIVE or ADVENTURE.
+unset
+All
+Custom'
+
+potion-splash
+Allow or block splash effect from potion
+Allowed
+Non-Members*
+State'

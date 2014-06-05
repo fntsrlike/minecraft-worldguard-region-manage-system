@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+@extends('master')
 
-  <title>阿爾法領地管理系統</title>
-
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="./assets/semantic/packaged/css/semantic.min.css">
-</head>
-<body>
+@section('content')
   <table class="ui sortable table segment">
     <thead>
       <tr>
@@ -47,15 +37,13 @@
       </th>
     </tr></tfoot>
   </table>
+@stop
 
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="./assets/semantic/packaged/javascript/semantic.min.js"></script>
-  <script src="./assets/js/jquery.tablesort.min.js"></script>
-
+@section('footer_scripts')
+  @parent
   <script type="text/javascript">
     $(function(){
       $('.sortable').tablesort();
     });
   </script>
-</body>
-</html>
+@stop
